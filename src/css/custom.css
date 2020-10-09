@@ -315,7 +315,50 @@ button {
 
 .stats p {
   text-transform: lowercase;
-  font-weight: 500;
+  font-weight: 200;
+}
+
+/* 
+    Service
+*/
+.pricing-cta h3 span,
+.pricing-cta p {
+  font-size: clamp(24px, 5vw, 30px);
+  font-weight: 200;
+  text-transform: lowercase;
+}
+
+.pricing-cta h3 {
+  font-size: clamp(30px, 5vw, 40px);
+  font-weight: 700;
+  text-transform: lowercase;
+  position: relative;
+  padding-top: 50px;
+}
+
+.pricing-cta h3 span {
+  color: var(--clemo-contentText);
+}
+
+.pricing-cta h3::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  height: 2px;
+  width: 50px;
+  background: white;
+}
+
+.filter {
+  text-transform: lowercase;
+}
+
+.filter-active {
+  font-weight: 600;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -330,6 +373,23 @@ button {
 
   .about-headline {
     padding-left: 50px;
+  }
+
+  .pricing-cta p {
+    text-align: right;
+  }
+
+  .pricing-cta h3 {
+    padding-top: 0;
+    padding-left: 50px;
+  }
+
+  .pricing-cta h3::before {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
   }
 }
 
