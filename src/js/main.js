@@ -30,6 +30,25 @@ var mySwiper14 = new Swiper('#slider-gallery-14', {
   },
 })
 
+// TEAM SLIDER
+var mySwiperCustom = new Swiper('#slider-gallery-custom', {
+  speed: 400,
+  loop: true,
+  spaceBetween: 40,
+  navigation: {
+    nextEl: '#slider-gallery-14-next',
+    prevEl: '#slider-gallery-14-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  slidesPerView: 'auto',
+  autoplay: {
+    delay: 2000,
+  },
+})
+
 var mySwiper15Thumbs = new Swiper('#slider-gallery-15-thumbs', {
   spaceBetween: 5,
   slidesPerView: 3,
