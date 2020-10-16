@@ -7281,6 +7281,10 @@ button.bg-white:focus {
   width: 50% !important;
 }
 
+.w-65 {
+  width: 65% !important;
+}
+
 .w-75 {
   width: 75% !important;
 }
@@ -8953,7 +8957,7 @@ a.text-white:focus {
   }
 }
 .images-ratio.ratio-4-3::before {
-  padding-top: 70.37%;
+  padding-top: 90.37%;
 }
 @media (max-width: 991.98px) {
   .images-ratio.ratio-4-3::before {

@@ -50,18 +50,20 @@ var mySwiperCustom = new Swiper('#slider-gallery-custom', {
 })
 
 var mySwiper15Thumbs = new Swiper('#slider-gallery-15-thumbs', {
-  spaceBetween: 5,
-  slidesPerView: 3,
-  loop: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
+  spaceBetween: 30,
+  centeredSlides: true,
+  cssMode: true,
+  speed: 400,
+  slidesPerView: 'auto',
   autoplay: {
-    delay: 5000,
+    delay: 2500,
+    disableOnInteraction: false,
   },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
+
 })
 
 var mySwiper15 = new Swiper('#slider-gallery-15', {
@@ -76,7 +78,8 @@ var mySwiper15 = new Swiper('#slider-gallery-15', {
     clickable: true,
   },
   autoplay: {
-    delay: 5000,
+    delay: 2600,
+    disableOnInteraction: false,
   },
   thumbs: {
     swiper: mySwiper15Thumbs,
