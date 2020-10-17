@@ -84,6 +84,7 @@ button {
   border: none;
   width: 170px;
   height: 50px;
+  padding-top: 13px;
   border-radius: 40px;
   text-transform: lowercase;
   font-weight: 400;
@@ -166,7 +167,7 @@ button {
 
 .portfolio-piece {
   filter: grayscale(1);
-  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .portfolio-piece:hover {
@@ -206,6 +207,63 @@ button {
   justify-content: center;
   align-items: center;
   opacity: 0.4;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item .img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
+  width: 150px;
+  height: 120px;
+  opacity: 0;
+  padding: 15px 0 10px;
+  background-color: var(--clemo-primary);
+  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.gallery-item:hover .img-overlay {
+  opacity: 1;
+}
+
+.gallery-item .img-overlay .featured-title {
+  color: black;
+  font-size: clamp(14px, 5vw, 18px);
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.gallery-item .img-overlay p {
+  color: black;
+  font-size: clamp(12px, 5vw, 14px);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  text-transform: lowercase;
+  margin: 0;
+}
+
+.gallery-item .img-overlay .featured-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  bottom: 0;
+  height: 2px;
+  width: 50px;
+  background: black;
 }
 
 .swiper-container-thumbs {
