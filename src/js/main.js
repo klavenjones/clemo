@@ -94,3 +94,102 @@ $(mySwiper15.slides).each(function () {
     }
   })
 })
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+gsap.from(".anim1", { opacity: 0, duration: 1, y: -50, stagger: .4});
+
+gsap.from(".anim-left-1", {
+  scrollTrigger: {
+    trigger: ".services",
+    start: "top center",
+   
+  },
+  x: -100,
+  opacity: 0,
+  duration: 1,
+  stagger: 1
+});
+
+gsap.from(".anim-right-1", {
+  scrollTrigger: {
+    trigger: ".services",
+    start: "top center",
+  },
+  x: 100,
+  opacity: 0,
+  duration: 1,
+  stagger: 1
+});
+
+gsap.from(".anim-left-2", {
+  scrollTrigger: {
+    trigger: ".anim-left-1",
+    start: "bottom center",
+  },
+  x: -100,
+  opacity: 0,
+  duration: 1,
+  
+});
+
+gsap.from(".anim-right-2", {
+  scrollTrigger: {
+    trigger: ".anim-left-1",
+    start: "bottom center",
+    markers: true
+  },
+  x: 100,
+  opacity: 0,
+  duration: 1,
+});
+
+gsap.from(".anim-left-3", {
+  scrollTrigger: {
+    trigger: ".anim-left-2",
+    start: "bottom center",
+    markers: true
+  },
+  x: -100,
+  opacity: 0,
+  duration: 1,
+  
+});
+
+gsap.from(".anim-right-3", {
+  scrollTrigger: {
+    trigger: ".anim-left-2",
+    start: "bottom center",
+    markers: true
+  },
+  x: 100,
+  opacity: 0,
+  duration: 1,
+});
+
+
+gsap.from(".anim-work", {
+  scrollTrigger: {
+    trigger: ".work",
+    start: "top center",
+    markers: true
+  },
+  y: 200,
+  opacity: 0,
+  duration: 1
+})
+
+
+gsap.from(".anim-entry", {
+  scrollTrigger: {
+    trigger: ".about-us",
+    start: "top center",
+   
+  },
+  y: 200,
+  opacity: 0,
+  duration: 1,
+  stagger: .8
+})
