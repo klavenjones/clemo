@@ -167,7 +167,7 @@ button {
 
 .portfolio-piece {
   filter: grayscale(1);
-  transition: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .portfolio-piece:hover {
@@ -229,7 +229,7 @@ button {
   opacity: 0;
   padding: 15px 0 10px;
   background-color: var(--clemo-primary);
-  transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .gallery-item:hover .img-overlay {
@@ -490,9 +490,6 @@ button {
   margin-top: -10px;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -555,6 +552,4 @@ button {
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
+
